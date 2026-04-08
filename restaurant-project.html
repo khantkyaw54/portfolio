@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>restaurant-project</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/the-new-css-reset/css/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__inner">
+
+            <!-- Title OUTSIDE nav -->
+            <h1 class="header__title"><a href="./index.html">
+
+                    KHANT KYAW <span>/ Portfolio</span>
+                </a>
+            </h1>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="index.html#about">About</a></li>
+                    <li class="header__nav-item"><a href="index.html#skills">Skills</a></li>
+                    <li class="header__nav-item"><a href="index.html#works">Projects</a></li>
+                    <li class="header__nav-item"><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main__inner">
+            <section class="project">
+                <div class="project__inner">
+
+                    <h1 class="project__title">Restaurant Website</h1>
+
+                    <div class="project__image"><img src="./images/work-image01.png" class="project__image"
+                            alt="restaurant"></div>
+
+                    <div class="project__info">
+                        <p><strong>使用技術：</strong>HTML / CSS / JavaScript</p>
+                        <p><strong>制作期間：</strong>2025.09 - 2026.01</p>
+                    </div>
+
+                    <div class="project__section">
+                        <h2>概要</h2>
+                        <p>
+                            レストランの公式サイトをイメージして制作したWebサイトです。
+                            メニューや店舗情報を分かりやすく伝えることを意識しました。
+                        </p>
+                    </div>
+
+                    <div class="project__section">
+                        <h2>工夫した点</h2>
+                        <p>
+                            デザインはシンプルで清潔感のあるスタイルを採用し、ユーザーが必要な情報にすぐアクセスできるようにしました。
+                            また、JavaScriptを用いてメニューの切り替えやモーダル表示などのインタラクションを実装しました。
+                        </p>
+                    </div>
+
+                    <div class="project__section">
+                        <h2>課題と解決</h2>
+                        <p>
+                            レスポンシブデザインの実装に苦労しましたが、CSSのメディアクエリを活用して、スマートフォンやタブレットでも快適に閲覧できるように調整しました。
+                        </p>
+                    </div>
+
+                    <div class="project__links">
+                        <div class="project__buttons">
+                            <a href="index.html" target="_blank" class="btn">
+                                ← Back To Home
+                            </a>
+                        </div>
+                        <div class="project__buttons">
+                            <a href="https://octopus-7291.hippy.jp/bawbaw_izakaya/" target="_blank" class="btn">
+                                Live Site →
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <button id="toTop" class="to-top">
+                ↑
+            </button>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__inner">
+            <p class="footer__text">© 2026 Khant Kyaw. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

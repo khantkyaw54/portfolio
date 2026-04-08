@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khant-Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/the-new-css-reset/css/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__inner">
+
+            <!-- Title OUTSIDE nav -->
+            <h1 class="header__title"><a href="./index.html">
+
+                    KHANT KYAW <span>/ Portfolio</span>
+                </a>
+            </h1>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="#about">About</a></li>
+                    <li class="header__nav-item"><a href="#skills">Skills</a></li>
+                    <li class="header__nav-item"><a href="#works">Projects</a></li>
+                    <li class="header__nav-item"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main__inner">
+
+            <section class="intro">
+                <div class="intro__inner">
+
+                    <p class="intro__sub">Web Developer</p>
+
+                    <h1 class="intro__title glitch" data-text="Hi, I'm Khant Kyaw">
+                        Hi, I'm Khant Kyaw
+                    </h1>
+
+                    <h2 class="intro__typing">
+                        <span id="typing-text"></span>
+                    </h2>
+
+                    <div class="intro__buttons">
+                        <a href="#works" class="btn btn--primary">View Projects</a>
+                        <a href="#contact" class="btn btn--ghost">Contact</a>
+                    </div>
+
+                </div>
+            </section>
+
+
+
+            <section id="about" class="about section zoom">
+                <h2 class="section__title"><span>WHO</span> am I</h2>
+                <div class="section-sub">About Me</div>
+                <div class="about__item">
+                    <p class="section__content">
+                        ご覧いただきありがとうございます。<br><br>
+                        日本でWeb開発を学びながら、実践的なスキルの習得に取り組んでいます。HTML・CSS・JavaScriptを中心に、ユーザーにとって使いやすく、分かりやすいWebサイトの制作を意識しています。<br><br>
+                        これまでに個人ブログやレストランサイトの制作を通して、デザインから実装まで一貫して経験してきました。現在はReactなどのモダンな技術の習得にも取り組んでいます。<br><br>
+                        今後は、実務の中でさらにスキルを磨き、ユーザー視点を大切にしたWeb開発に貢献できるエンジニアを目指しています。
+                    </p>
+                    <div class="about__image-wrapper">
+                        <img src="./images/portfolio-image01.png" class="about__image">
+                    </div>
+                </div>
+            </section>
+            <section id="works" class="works section stagger">
+                <h2 class="section__title"><span>WHAT</span> I built</h2>
+                <div class="section-sub">Projects</div>
+                <div class="works__list">
+
+                    <!-- Project 1 -->
+                    <div class="work">
+                        <div class="work__image"><img src="./images/work-image01.png" alt="work-image"></div>
+
+                        <div class="work__content">
+                            <h3 class="work__title">Restaurant Website</h3>
+                            <p class="work__desc">
+                                HTML・CSS・JavaScriptを使用して制作したレストランのWebサイトです。レスポンシブ対応と使いやすいデザインを意識しました。
+                            </p>
+
+                            <div class="work__tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+
+                            <a href="./restaurant-project.html" class="work__link">View Project
+                                →</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="work">
+                        <div class="work__image"><img src="./images/work-image02.png" alt="work-image"></div>
+
+                        <div class="work__content">
+                            <h3 class="work__title">My Blog</h3>
+                            <p class="work__desc">
+                                自身の学習記録や制作物を発信するブログサイトです。WordPressを使用し、UI/UXとレスポンシブデザインを意識して設計・実装しました。
+                            </p>
+
+                            <div class="work__tags">
+                                <span>HTML</span>
+                                <span>SCSS</span>
+                                <span>JavaScript</span>
+                                <span>Wordpress</span>
+                            </div>
+
+                            <a href="blog-project.html" class="work__link">View Project →</a>
+                        </div>
+                    </div>
+
+            </section>
+            <section id="journey" class="journey section zoom">
+                <h2 class="section__title"><span>MY</span> Growth</h2>
+                <div class="section-sub">Career Path</div>
+
+                <div class="journey__list">
+
+                    <div class="journey__item">
+                        <div class="journey__year">2025.03</div>
+                        <div class="journey__content">
+                            <h3>日本語学校（JLC）修了</h3>
+                            <p>日本語能力の基礎を習得し、進学に向けた準備を完了。</p>
+                        </div>
+                    </div>
+
+                    <div class="journey__item">
+                        <div class="journey__year">2025.04</div>
+                        <div class="journey__content">
+                            <h3>トライデントコンピュータ専門学校 入学</h3>
+                            <p>Web開発を中心に、プログラミングとデザインの学習を開始。</p>
+                        </div>
+                    </div>
+
+                    <div class="journey__item">
+                        <div class="journey__year">2025.06 - 08</div>
+                        <div class="journey__content">
+                            <h3>個人ブログ制作</h3>
+                            <p>WordPressを用いてブログサイトを構築し、UI/UXとレスポンシブ対応を実装。</p>
+                        </div>
+                    </div>
+
+                    <div class="journey__item">
+                        <div class="journey__year">2025.09 - 2026.01</div>
+                        <div class="journey__content">
+                            <h3>レストランWebサイト制作</h3>
+                            <p>HTML・CSS・JavaScriptを用いて、実践的なWebサイト制作を経験。</p>
+                        </div>
+                    </div>
+                    <div class="journey__item">
+                        <div class="journey__year">2025.12</div>
+                        <div class="journey__content">
+                            <h3>Webクリエイター能力認定試験 HTML5 エキスパート 合格</h3>
+                            <p>HTML・CSSの実践的なコーディングスキルを証明。</p>
+                        </div>
+                    </div>
+                    <div class="journey__item">
+                        <div class="journey__year">2025.12</div>
+                        <div class="journey__content">
+                            <h3>JLPT N2 合格</h3>
+                            <p>ビジネスレベルの日本語能力を証明。</p>
+                        </div>
+                    </div>
+                    <div class="journey__item">
+                        <div class="journey__year">2026.04</div>
+                        <div class="journey__content">
+                            <h3>TOEIC 715点取得</h3>
+                            <p>英語によるコミュニケーション能力を強化。</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <section id="skills" class="skills section stagger">
+                <h2 class="section__title"><span>HOW</span> I work</h2>
+                <div class="section-sub">Skills</div>
+                <div class="skills__list">
+
+                    <div class="skill">
+                        <div class="skill__name">
+                            <span>HTML</span>
+
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__level html"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill__name">
+                            <span>CSS</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__level css"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill__name">
+                            <span>JavaScript</span>
+
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__level js"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill__name">
+                            <span>React</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__level react"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__name">
+                            <span>Github</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__level github"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__name">
+                            <span>Figma</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__level figma"></div>
+                        </div>
+                    </div>
+            </section>
+            <section id="contact" class="contact section stagger">
+                <h2 class="section__title"><span>LET'S</span> chat</h2>
+                <div class="section-sub">Contact</div>
+                <div class="contact__inner">
+
+                    <p class="contact__text">
+                        お気軽にご連絡ください。お仕事のご相談やご質問など、お待ちしております。
+                    </p>
+
+
+                    <a href="mailto:your@email.com" class="contact__mail">
+                        khantkyaw7291@gmail.com
+                    </a>
+
+
+                    <div class="contact__cards">
+
+                        <a href="https://github.com/khantkyaw54" target="_blank" class="contact__card">
+                            <i class="fab fa-github"></i>
+                            <p class="contact__label">GitHub</p>
+                            <span class="contact__value">@khantkyaw54</span>
+                        </a>
+
+                        <a href="https://www.instagram.com/shynnyyyyyy/?hl=ja" target="_blank"
+                            class="contact__card insta">
+                            <i class="fa-brands fa-instagram"></i>
+                            <p class="contact__label">Instagram</p>
+                            <span class="contact__value">@OcToPus</span>
+                        </a>
+
+                    </div>
+                </div>
+            </section>
+            <button id="toTop" class="to-top">
+                ↑
+            </button>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__inner">
+            <p class="footer__text">© 2026 Khant Kyaw. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
