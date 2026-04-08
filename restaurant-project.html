@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/the-new-css-reset/css/reset.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -37,55 +38,108 @@
     <main class="main">
         <div class="main__inner">
             <section class="project">
-                <div class="project__inner">
 
-                    <h1 class="project__title">Restaurant Website</h1>
+                <h1 class="project__title">Restaurant Landing Page</h1>
 
-                    <div class="project__image"><img src="./images/work-image01.png" class="project__image"
-                            alt="restaurant"></div>
+                <!-- 🔥 HERO IMAGE -->
+                <div class="project__hero">
+                    <img src="./images/work-image01.png" alt="restaurant">
+                </div>
 
-                    <div class="project__info">
-                        <p><strong>使用技術：</strong>HTML / CSS / JavaScript</p>
-                        <p><strong>制作期間：</strong>2025.09 - 2026.01</p>
+                <!-- TITLE -->
+
+
+                <!-- INFO -->
+                <div class="project__info">
+                    <p><strong>使用技術：</strong>HTML / CSS / JavaScript</p>
+                    <p><strong>制作期間：</strong>2025.09 - 2026.01</p>
+                    <p><strong>担当：</strong>デザイン / フロントエンド実装</p>
+                </div>
+
+                <!-- 🎯 PURPOSE -->
+                <div class="project__section">
+                    <h2>目的</h2>
+                    <p>
+                        レストランの魅力を分かりやすく伝え、ユーザーが必要な情報にすぐアクセスできるWebサイトを制作しました。
+                    </p>
+                </div>
+
+                <!-- 🖼 GALLERY -->
+                <div class="project__section">
+                    <h2>画面イメージ</h2>
+
+                    <div class="project__gallery">
+                        <img src="./images/images-001.webp" alt="">
+                        <img src="./images/images-002.webp" alt="">
+                        <img src="./images/images-003.webp" alt="">
                     </div>
+                </div>
 
-                    <div class="project__section">
-                        <h2>概要</h2>
-                        <p>
-                            レストランの公式サイトをイメージして制作したWebサイトです。
-                            メニューや店舗情報を分かりやすく伝えることを意識しました。
-                        </p>
+                <!-- ⚡ FEATURES -->
+                <div class="project__section">
+                    <h2>主な機能</h2>
+
+                    <div class="project__features">
+                        <div class="feature">
+                            <h3>レスポンシブ対応</h3>
+                            <p>スマートフォン・タブレットでも快適に閲覧可能</p>
+                        </div>
+
+                        <div class="feature">
+                            <h3>メニュー切り替え</h3>
+                            <p>JavaScriptで動的に表示を切り替え</p>
+                        </div>
+
+                        <div class="feature">
+                            <h3>モーダル表示</h3>
+                            <p>詳細情報を分かりやすく表示</p>
+                        </div>
                     </div>
+                </div>
 
-                    <div class="project__section">
+                <!-- 💡 CHALLENGE -->
+                <div class="project__split">
+
+                    <!-- TEXT -->
+                    <div class="project__text">
+
                         <h2>工夫した点</h2>
-                        <p>
-                            デザインはシンプルで清潔感のあるスタイルを採用し、ユーザーが必要な情報にすぐアクセスできるようにしました。
-                            また、JavaScriptを用いてメニューの切り替えやモーダル表示などのインタラクションを実装しました。
-                        </p>
-                    </div>
+                        <ul class="project__list">
+                            <li>レスポンシブ対応を意識したレイアウト設計</li>
+                            <li>ユーザーが直感的に操作できるUIを設計</li>
+                        </ul>
 
-                    <div class="project__section">
                         <h2>課題と解決</h2>
                         <p>
-                            レスポンシブデザインの実装に苦労しましたが、CSSのメディアクエリを活用して、スマートフォンやタブレットでも快適に閲覧できるように調整しました。
+                            レスポンシブ対応の際にレイアウト崩れが発生しましたが、
+                            Flexboxやメディアクエリを活用して解決しました。
                         </p>
+
                     </div>
 
-                    <div class="project__links">
-                        <div class="project__buttons">
-                            <a href="index.html" target="_blank" class="btn">
-                                ← Back To Home
-                            </a>
-                        </div>
-                        <div class="project__buttons">
-                            <a href="https://octopus-7291.hippy.jp/bawbaw_izakaya/" target="_blank" class="btn">
-                                Live Site →
-                            </a>
-                        </div>
+                    <!-- IMAGE -->
+                    <div class="project__img">
+                        <img src="./images/work-image01.png" alt="">
                     </div>
 
                 </div>
+
+                <!-- 📈 LEARNING -->
+                <div class="project__section">
+                    <h2>学んだこと</h2>
+                    <p>
+                        レスポンシブデザインの重要性と、ユーザー視点で設計することの大切さを学びました。
+                    </p>
+                </div>
+
+                <!-- BUTTONS -->
+                <div class="project__links">
+                    <a href="index.html" class="btn">← Back To Home</a>
+                    <a href="https://octopus-7291.hippy.jp/bawbaw_izakaya/" target="_blank" class="btn">
+                        Live Site →
+                    </a>
+                </div>
+
             </section>
             <button id="toTop" class="to-top">
                 ↑
