@@ -11,6 +11,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
 
+<!-- Loader -->
+<div id="loader">
+    <div class="loader__content">
+        <div class="loader__circle"></div>
+        <p>Khant-Portfolio</p>
+    </div>
+</div>
+
 <body>
     <header class="header">
         <div class="header__inner">
@@ -88,10 +96,19 @@
 
                     <!-- Project 1 -->
                     <div class="work">
-                        <div class="work__image"><img src="./images/work-image01.png" alt="work-image"></div>
+
+                        <!-- IMAGE (clickable) -->
+                        <a href="./restaurant-project.html" class="work__image">
+                            <img src="./images/work-image01.png" alt="restaurant">
+                        </a>
 
                         <div class="work__content">
-                            <h3 class="work__title">Restaurant Website</h3>
+
+                            <!-- TITLE (clickable) -->
+                            <h3 class="work__title">
+                                <a href="./restaurant-project.html">Restaurant Landing Page</a>
+                            </h3>
+
                             <p class="work__desc">
                                 HTML・CSS・JavaScriptを使用して制作したレストランのWebサイトです。レスポンシブ対応と使いやすいデザインを意識しました。
                             </p>
@@ -102,29 +119,44 @@
                                 <span>JavaScript</span>
                             </div>
 
-                            <a href="./restaurant-project.html" class="work__link">View Project
-                                →</a>
+                            <!-- BUTTON -->
+                            <a href="./restaurant-project.html" class="work__link">
+                                View Project →
+                            </a>
+
                         </div>
                     </div>
 
                     <!-- Project 2 -->
                     <div class="work">
-                        <div class="work__image"><img src="./images/work-image02.png" alt="work-image"></div>
+
+                        <!-- IMAGE -->
+                        <a href="./blog-project.html" class="work__image">
+                            <img src="./images/work-image02.png" alt="blog">
+                        </a>
 
                         <div class="work__content">
-                            <h3 class="work__title">My Blog</h3>
+
+                            <!-- TITLE -->
+                            <h3 class="work__title">
+                                <a href="./blog-project.html">Blog Platform (WordPress)</a>
+                            </h3>
+
                             <p class="work__desc">
-                                自身の学習記録や制作物を発信するブログサイトです。WordPressを使用し、UI/UXとレスポンシブデザインを意識して設計・実装しました。
+                                WordPressを使用し、記事投稿やカテゴリー管理機能を実装したブログサイトです。UI/UXとレスポンシブデザインを意識しました。
                             </p>
 
                             <div class="work__tags">
                                 <span>HTML</span>
                                 <span>SCSS</span>
                                 <span>JavaScript</span>
-                                <span>Wordpress</span>
+                                <span>WordPress</span>
                             </div>
 
-                            <a href="blog-project.html" class="work__link">View Project →</a>
+                            <a href="./blog-project.html" class="work__link">
+                                View Project →
+                            </a>
+
                         </div>
                     </div>
 
