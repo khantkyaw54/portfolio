@@ -90,10 +90,14 @@ window.addEventListener("scroll", () => {
 
 // loader
 
+
+
 window.addEventListener("load", () => {
     const loader = document.getElementById("loader");
 
-    setTimeout(() => {
-        loader.classList.add("hide");
-    }, 1000); // adjust speed here
+    if (loader) {
+        setTimeout(() => {
+            loader.classList.add("hide");
+        }, 800);
+    }
 });
