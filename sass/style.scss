@@ -1246,6 +1246,8 @@ h1 {
 .loader__content {
     text-align: center;
     color: #00ffcc;
+    font-size: rem(40);
+    font-family: 'Orbitron', sans-serif;
 }
 
 /* Circle animation */
@@ -1263,5 +1265,32 @@ h1 {
 @keyframes spin {
     to {
         transform: rotate(360deg);
+    }
+}
+
+.loader__text {
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: 4px;
+    margin-top: 15px;
+
+    background: linear-gradient(90deg, #00ffcc, #00aaff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    text-transform: uppercase;
+}
+
+.loader__text {
+    animation: fadeText 1s ease-in-out infinite alternate;
+}
+
+@keyframes fadeText {
+    from {
+        opacity: 0.5;
+    }
+
+    to {
+        opacity: 1;
     }
 }

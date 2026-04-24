@@ -2,15 +2,31 @@ const hamburger = document.getElementById("hamburger");
 const nav = document.querySelector(".header__nav-list");
 
 if (hamburger && nav) {
-    hamburger.addEventListener("click", () => {
+    hamburger.addEventListener("click", (e) => {
+        e.stopPropagation(); // prevent closing immediately
         hamburger.classList.toggle("active");
         nav.classList.toggle("active");
+    });
+
+    // 👉 click inside menu → don't close
+    nav.addEventListener("click", (e) => {
+        e.stopPropagation();
+    });
+
+    // 👉 click outside → close menu
+    document.addEventListener("click", () => {
+        hamburger.classList.remove("active");
+        nav.classList.remove("active");
     });
 }
 
 
 
-const text = ["Frontend Developer", "React Learner", "Future Engineer in Japan"];
+const text = [
+    "フロントエンドエンジニア",
+    "レスポンシブなWebサイト制作",
+    "React・PHPを学習中"
+];
 let i = 0;
 let j = 0;
 let currentText = "";
@@ -98,6 +114,6 @@ window.addEventListener("load", () => {
     if (loader) {
         setTimeout(() => {
             loader.classList.add("hide");
-        }, 800);
+        }, 1200);
     }
 });
