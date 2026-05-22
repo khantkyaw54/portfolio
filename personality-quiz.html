@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog-project</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/the-new-css-reset/css/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+
+
+<body>
+    <header class="header">
+        <div class="header__inner">
+
+            <!-- Title OUTSIDE nav -->
+            <h1 class="header__title"><a href="./index.html">
+
+                    KHANT KYAW <span>/ Portfolio</span>
+                </a>
+            </h1>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="index.html#about">About</a></li>
+                    <li class="header__nav-item"><a href="index.html#works">Projects</a></li>
+                    <li class="header__nav-item"><a href="index.html#skills">Career</a></li>
+                    <li class="header__nav-item"><a href="index.html#skills">Skills</a></li>
+                    <li class="header__nav-item"><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main__inner">
+            <section class="project">
+
+                <h2 class="project__title">Personality Quiz App</h2>
+
+                <!-- HERO IMAGE -->
+                <div class="project__hero">
+                    <img src="./images/work-image03.png" alt="personality-quiz">
+                </div>
+
+                <!-- INFO -->
+                <div class="project__info">
+                    <p><strong>使用技術：</strong>React / JavaScript / CSS</p>
+                    <p><strong>制作期間：</strong>2026.05</p>
+                </div>
+
+                <!-- PURPOSE -->
+                <div class="project__section">
+
+                    <h2>目的</h2>
+
+                    <p>
+                        Reactの基礎学習を目的として、
+                        MBTI性格診断アプリを制作しました。
+                        質問への回答に応じて性格タイプを表示する機能を実装しました。
+                    </p>
+
+                </div>
+
+                <!-- GALLERY -->
+                <div class="project__section">
+
+                    <h2>画面イメージ</h2>
+
+                    <div class="project__gallery">
+                        <img src="./images/personality-quiz-image001.png" alt="personality01">
+                        <img src="./images/personality-quiz-image002.png" alt="personality02">
+                        <img src="./images/personality-quiz-image003.png" alt="personality03">
+                    </div>
+
+                </div>
+
+                <!-- FEATURES -->
+                <div class="project__section">
+
+                    <h2>主な機能</h2>
+
+                    <div class="project__features">
+
+                        <div class="feature">
+                            <h3>性格診断機能</h3>
+                            <p>
+                                回答内容に応じて性格タイプを表示
+                            </p>
+                        </div>
+
+                        <div class="feature">
+                            <h3>質問切り替え機能</h3>
+                            <p>
+                                ボタン操作で質問を順番に表示
+                            </p>
+                        </div>
+
+                        <div class="feature">
+                            <h3>レスポンシブ対応</h3>
+                            <p>
+                                スマートフォンでも見やすいデザイン
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- CHALLENGE -->
+                <div class="project__split">
+
+                    <!-- TEXT -->
+                    <div class="project__text">
+
+                        <h2>工夫した点</h2>
+
+                        <ul class="project__list">
+                            <li>シンプルで見やすいUIを意識</li>
+                            <li>進行状況が分かるプログレスバーを実装</li>
+                            <li>Reactのstateを利用して画面を切り替え</li>
+                        </ul>
+
+                        <h2>課題と解決</h2>
+
+                        <p>
+                            Reactのstate管理や条件分岐の実装に苦労しましたが、
+                            実際に機能を追加しながら理解を深めました。
+                        </p>
+
+                    </div>
+
+                    <!-- IMAGE -->
+                    <div class="project__img">
+                        <img src="./images/work-image03.png" alt="work-image03">
+                    </div>
+
+                </div>
+
+                <!-- LEARNING -->
+                <div class="project__section">
+
+                    <h2>学んだこと</h2>
+
+                    <p>
+                        Reactを使った状態管理や、
+                        ユーザー操作に応じた画面切り替えについて学ぶことができました。
+                    </p>
+
+                </div>
+
+                <!-- BUTTONS -->
+                <div class="project__links">
+
+                    <a href="index.html#works" class="btn">
+                        ← Back To Home
+                    </a>
+
+                    <a href="https://octopus-7291.hippy.jp/personality-quiz/" class="btn">
+                        Live Site →
+                    </a>
+
+                </div>
+
+            </section>
+            <button id="toTop" class="to-top">
+                ↑
+            </button>
+
+
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__inner">
+            <p class="footer__text">© 2026 Khant Kyaw. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
