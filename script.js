@@ -8,19 +8,17 @@ if (hamburger && nav) {
         nav.classList.toggle("active");
     });
 
-    // 👉 click inside menu → don't close
+    //click inside menu → don't close
     nav.addEventListener("click", (e) => {
         e.stopPropagation();
     });
 
-    // 👉 click outside → close menu
+    //click outside → close menu
     document.addEventListener("click", () => {
         hamburger.classList.remove("active");
         nav.classList.remove("active");
     });
 }
-
-
 
 const text = [
     "フロントエンドエンジニア",
@@ -105,9 +103,6 @@ window.addEventListener("scroll", () => {
 });
 
 // loader
-
-
-
 window.addEventListener("load", () => {
     const loader = document.getElementById("loader");
 
